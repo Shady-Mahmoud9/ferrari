@@ -32,7 +32,7 @@ function Third() {
         <button className='bg-red-600 text-white hover:text-red-600 rounded-full w-[60px] hover:bg-gray-200  absolute top-0 left-0 md:left-16   p-3 z-10'>
         <i class="fa-solid text-xl  fa-2"></i>
             </button>
-          <img src={oracle} className='md:w-[220px] w-[300px] hover:bg-gray-300 cursor-pointer h-[300px] md:h-[220px] bg-white rounded-full pt-5' alt='' />
+          <img src={oracle} className='md:w-[220px] w-[300px] hover:bg-gray-300 cursor-pointer h-[200px] md:h-[220px] bg-white rounded-full pt-5' alt='' />
           <img src={oraclecar} className='-mt-32 w-[270px]' alt='' />
 
           <div className='flex mt-10 flex-col justify-center items-center text-center'>
@@ -63,7 +63,7 @@ function Third() {
         <button className='bg-red-600 text-white hover:text-red-600 rounded-full w-[60px] hover:bg-gray-300  absolute top-0 left-0 md:left-16   p-3 z-10'>
         <i class="fa-solid text-xl  fa-3"></i>
             </button>
-          <img src={ferrari} className='md:w-[220px] w-[300px] hover:bg-gray-200 cursor-pointer h-[300px] md:h-[220px] bg-white rounded-full pt-5' alt='' />
+          <img src={ferrari} className='md:w-[220px] w-[300px] hover:bg-gray-200 cursor-pointer h-[200px] md:h-[200px] bg-white rounded-full pt-5' alt='' />
           <img src={scudera} className='-mt-24 w-[270px] ' alt='' />
           
           <div className='flex flex-col justify-center items-center text-center'>
