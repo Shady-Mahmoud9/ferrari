@@ -66,8 +66,8 @@ function Fourth() {
     
       {
         news.map((item)=>{
-          return(<div className='w-full md:w-1/2 text-center'>
-          <img src={item.image} className='w-full h-[400px] rounded-md' alt='' />
+          return(<div  data-aos='fade-up' data-aos-duration='1500' className='w-full md:w-1/2 text-center'>
+          <img src={item.image} className='hover:opacity-90 cursor-pointer w-full h-[300px] md:h-[400px] rounded-md' alt='' />
            <h1 className='text-red-600 text-2xl font-semibold  mt-4 md:mt-8'>news</h1>
            <h1 className='text-black text-3xl font-semibold  mt-4'>{item.description}</h1>
              </div>)
@@ -92,8 +92,8 @@ function Fourth() {
     
       {
         neww.map((item)=>{
-          return(<div className='w-full lg:w-1/3 text-center'>
-          <img src={item.image} className='w-full h-[200px] md:h-[300px] rounded-md' alt='' />
+          return(<div data-aos='fade-up' data-aos-duration='1500' className='w-full lg:w-1/3 text-center'>
+          <img src={item.image} className='hover:opacity-90 cursor-pointer w-full h-[200px] md:h-[300px] rounded-md' alt='' />
            <h1 className='text-red-600 text-2xl font-semibold  mt-4 md:mt-8'>news</h1>
            <h1 className='text-black text-3xl font-semibold  mt-4'>{item.description}</h1>
              </div>)

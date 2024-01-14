@@ -62,7 +62,7 @@ function Fifth() {
             </div>
         
             <div className='flex flex-col md:flex-row gap-20 justify-center p-10'>
-                <div className='w-full  flex flex-wrap gap-[50px]'>
+                <div className='w-full md:w-[70%] flex flex-wrap gap-[50px]'>
                     {TeamData.map((team, index) => (
                         <Team
                             key={index}
@@ -95,24 +95,24 @@ function Fifth() {
         
         <div className='flex flex-col gap-5 md:flex-row justify-center mt-20 p-10 items-center'>
     <div className='w-full md:w-1/2 lg:w-1/4 relative'>
-        <img src={italy} className='w-full h-[250px] opacity-80' alt=''/>
-        <h1 className='absolute left-1/2 top-[40%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white '>ITALY</h1>
-        <h1 className='absolute left-1/2 top-[55%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white '>2022</h1>
+        <img src={italy} className='hover:opacity-100 cursor-pointer w-full h-[250px] opacity-80' alt=''/>
+        <h1 className='absolute left-1/2 top-[40%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white cursor-pointer'>ITALY</h1>
+        <h1 className='absolute left-1/2 top-[55%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white cursor-pointer'>2022</h1>
     </div>
     <div className='w-full md:w-1/2 lg:w-1/4 relative'>
-        <img src={suadi} className='w-full h-[250px] opacity-80' alt=''/>
-        <h1 className='absolute left-1/2 top-[40%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white '>SUADI_ARABIA</h1>
-        <h1 className='absolute left-1/2 top-[55%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white '>2022</h1>
+        <img src={suadi} className='hover:opacity-100 cursor-pointer w-full h-[250px] opacity-80' alt=''/>
+        <h1 className='absolute left-1/2 top-[40%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white cursor-pointer'>SUADI_ARABIA</h1>
+        <h1 className='absolute left-1/2 top-[55%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white cursor-pointer'>2022</h1>
     </div>
     <div className='w-full md:w-1/2 lg:w-1/4 relative'>
-        <img src={bahrain} className='w-full h-[250px] opacity-80' alt=''/>
-        <h1 className='absolute left-1/2 top-[40%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white '>BAHRAIN</h1>
-        <h1 className='absolute left-1/2 top-[55%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white '>2022</h1>
+        <img src={bahrain} className ='hover:opacity-100 cursor-pointer w-full h-[250px] opacity-80' alt=''/>
+        <h1 className='absolute left-1/2 top-[40%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white cursor-pointer'>BAHRAIN</h1>
+        <h1 className='absolute left-1/2 top-[55%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white cursor-pointer'>2022</h1>
     </div>
     <div className='w-full md:w-1/2 lg:w-1/4 relative'>
-        <img src={australia} className='w-full h-[250px] opacity-80' alt=''/>
-        <h1 className='absolute left-1/2 top-[40%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white '>AUSTRTALIAN</h1>
-        <h1 className='absolute left-1/2 top-[55%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white '>2022</h1>
+        <img src={australia} className='hover:opacity-100 cursor-pointer w-full h-[250px] opacity-80' alt=''/>
+        <h1 className='absolute left-1/2 top-[40%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white cursor-pointer'>AUSTRTALIAN</h1>
+        <h1 className='absolute left-1/2 top-[55%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white cursor-pointer'>2022</h1>
     </div>
 </div>
       
@@ -122,7 +122,7 @@ function Fifth() {
                 <h1 className='text-white text-2xl'>Join Our Mailing List And</h1>
                 <h1 className='text-white font-bold text-4xl'>Get Closer To The Action With  F1 TV</h1>
             </div>
-            <div ><button className='bg-white hover:bg-red-800  text-red-500 hover:text-white mt-10 md:mt-4 -skew-x-12   font-bold px-10 p-4'>Subscribe Now<i class="fa-solid fa-angle-right"></i></button></div>
+            <div ><button className='bg-white hover:bg-black  text-red-500 hover:text-white mt-10 md:mt-4 -skew-x-12   font-bold px-10 p-4'>Subscribe Now<i class="fa-solid fa-angle-right"></i></button></div>
          </div>           
 
 

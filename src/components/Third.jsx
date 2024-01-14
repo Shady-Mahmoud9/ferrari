@@ -28,11 +28,11 @@ function Third() {
 
       <div className='flex flex-col md:flex-row justify-center  my-16 items-center gap-10 w-full p-10'>
         
-        <div className='w-full  relative md:w-1/4 flex flex-col gap-2 items-center'>
+        <div data-aos='zoom-in' data-aos-duration='1500' className='w-full  relative md:w-1/4 flex flex-col gap-2 items-center'>
         <button className='bg-red-600 text-white hover:text-red-600 rounded-full w-[60px] hover:bg-gray-200  absolute top-0 left-0 md:left-16   p-3 z-10'>
         <i class="fa-solid text-xl  fa-2"></i>
             </button>
-          <img src={oracle} className='md:w-[220px] w-[300px] h-[300px] md:h-[220px] bg-white rounded-full pt-5' alt='' />
+          <img src={oracle} className='md:w-[220px] w-[300px] hover:bg-gray-300 cursor-pointer h-[300px] md:h-[220px] bg-white rounded-full pt-5' alt='' />
           <img src={oraclecar} className='-mt-32 w-[270px]' alt='' />
 
           <div className='flex mt-10 flex-col justify-center items-center text-center'>
@@ -44,11 +44,11 @@ function Third() {
 
 
 
-        <div className='w-full md:w-1/4 relative flex flex-col gap-2 items-center'>
-        <button className='bg-red-600 text-white hover:text-red-600 rounded-full w-[60px] hover:bg-gray-200  absolute top-0 left-0 md:left-16   p-3 z-10'>
+        <div data-aos='zoom-in' data-aos-duration='1500' className='w-full md:w-1/4 relative flex flex-col gap-2 items-center'>
+        <button className='bg-red-600 text-white hover:text-red-600 rounded-full w-[60px] hover:bg-gray-300  absolute top-0 left-0 md:left-16   p-3 z-10'>
         <i class="fa-solid text-xl   fa-1"></i>
             </button>
-          <img src={marcides} className='md:w-[300px] w-[300px] h-[300px] md:h-[300px] bg-white rounded-full pt-5' alt='' />
+          <img src={marcides} className='md:w-[300px] w-[300px] cursor-pointer hover:bg-gray-200 h-[300px] md:h-[300px] bg-white rounded-full pt-5' alt='' />
           <img src={amg} className='-mt-28 w-[270px]' alt='' />
           
           <div className='flex  flex-col justify-center items-center text-center'>
@@ -59,12 +59,12 @@ function Third() {
         </div>
        
        
-        <div className='w-full md:w-1/4 relative  flex flex-col gap-2 items-center'>
-        <button className='bg-red-600 text-white hover:text-red-600 rounded-full w-[60px] hover:bg-gray-200  absolute top-0 left-0 md:left-16   p-3 z-10'>
+        <div data-aos='zoom-in' data-aos-duration='1500' className='w-full md:w-1/4 relative  flex flex-col gap-2 items-center'>
+        <button className='bg-red-600 text-white hover:text-red-600 rounded-full w-[60px] hover:bg-gray-300  absolute top-0 left-0 md:left-16   p-3 z-10'>
         <i class="fa-solid text-xl  fa-3"></i>
             </button>
-          <img src={ferrari} className='md:w-[220px] w-[300px] h-[300px] md:h-[220px] bg-white rounded-full pt-5' alt='' />
-          <img src={scudera} className='-mt-24 w-[270px]' alt='' />
+          <img src={ferrari} className='md:w-[220px] w-[300px] hover:bg-gray-200 cursor-pointer h-[300px] md:h-[220px] bg-white rounded-full pt-5' alt='' />
+          <img src={scudera} className='-mt-24 w-[270px] ' alt='' />
           
           <div className='flex flex-col justify-center items-center text-center'>
         
