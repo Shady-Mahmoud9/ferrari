@@ -48,7 +48,7 @@ function Third() {
         <button className='bg-red-600 text-white hover:text-red-600 rounded-full w-[60px] hover:bg-gray-300  absolute top-0 left-0 md:left-16   p-3 z-10'>
         <i class="fa-solid text-xl   fa-1"></i>
             </button>
-          <img src={marcides} className='md:w-[300px] w-[300px] cursor-pointer hover:bg-gray-200 h-[300px] md:h-[300px] bg-white rounded-full pt-5' alt='' />
+          <img src={marcides} className='md:w-[300px] w-[300px] cursor-pointer hover:bg-gray-200 h-[200px] md:h-[300px] bg-white rounded-full pt-5' alt='' />
           <img src={amg} className='-mt-28 w-[270px]' alt='' />
           
           <div className='flex  flex-col justify-center items-center text-center'>
