@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useEffect} from 'react'
 import bg from '../images/bg.png'
 import ferrari from '../images/firrari.png'
 import oracle from '../images/oracle.png'
@@ -6,9 +6,18 @@ import marcides from '../images/marcidec.png'
 import scudera from '../images/scudira.png'
 import amg from '../images/amg.png'
 import oraclecar from '../images/oraclecar.png'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 function Third() {
+
+  useEffect(() => {
+    AOS.init({
+       
+      easing: 'ease-in-out'
+    });
+  }, []);
+
   return (
     <div className='h-full md:h-[800px] mt-[70px] md:mt-[530px] ' style={{background:`url(${bg})` ,backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
 

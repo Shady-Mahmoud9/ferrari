@@ -1,4 +1,4 @@
-import React from 'react'
+import React  ,{useEffect}from 'react'
 import hamilton from '../images/hamilton.jpg'
 import building from '../images/building.jpg'
 import shokman from '../images/shokman.png'
@@ -12,7 +12,21 @@ import man3 from '../images/man3.png'
 import egypt from '../images/egypt.png'
 import turkey from '../images/turkey.png'
 import netherland from '../images/netherlands.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
+
 function Second() {
+
+  useEffect(() => {
+    AOS.init({
+       
+      easing: 'ease-in-out'
+    });
+  }, []);
+
+
+
   const topics = [
   {
     "image" : hamilton,
@@ -38,12 +52,12 @@ function Second() {
   
 
   return (
-    <>    <div className='bg-white mt-32 flex flex-col md:flex-row justify-center  items-center '>
-    <div className='text-center  flex flex-col ml-0 md:ml-auto justify-center items-center font-bold'>
+    <>    <div className='relative overflow-hidden bg-white mt-32  flex flex-col md:flex-row justify-center  items-center '>
+    <div className='text-center w-full flex flex-col justify-center items-center font-bold'>
       <h1 className='text-red-600 text-xl md:text-2xl  '>Featured</h1>
       <h1 className='text-Black text-4xl md:text-6xl  '>Topics</h1>
       </div> 
-      <div className='ml-0 md:ml-auto pr-0 md:pr-8'><button className='bg-red-600 hover:bg-red-400 text-white hover:text-gray-600 mt-10 md:mt-4 -skew-x-12   font-bold px-10 p-4'>Veiw All <i class="fa-solid fa-angle-right"></i></button>
+      <div className='absolute hidden lg:block transform translate-x-full left-[75%]'><button className='bg-red-600 hover:bg-red-400 text-white hover:text-gray-600 mt-10 md:mt-4 -skew-x-12   font-bold px-10 p-4'>Veiw All <i class="fa-solid fa-angle-right"></i></button>
       </div>
     </div>
    <div className='flex mt-32 flex-col flex-wrap gap-y-16 md:gap-y-20 gap-5 md:gap-10 md:flex-row w-full p-10'>
@@ -51,8 +65,8 @@ function Second() {
     
       {
         topics.map((item)=>{
-          return(<div className='w-full md:w-[450px] text-center'>
-          <img src={item.image} className='w-full h-[250px] md:h-[450px] rounded-md' alt='' />
+          return(<div className='w-full md:w-[44%] lg:w-[450px] text-center'>
+          <img src={item.image} className='w-full h-[300px] md:h-[450px] rounded-md' alt='' />
            <h1 className='text-black text-3xl font-semibold  mt-4 md:mt-8'>{item.title}</h1>
              </div>)
         })

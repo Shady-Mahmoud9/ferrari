@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import team1 from '../images/team1.png'
 import team2 from '../images/team2.png'
 import team3 from '../images/team3.png'
@@ -11,6 +11,12 @@ import australia from '../images/australia.jpg'
 import bahrain from '../images/bahrain.png'
 import helmet from '../images/helmet.jpg'
 import last from '../images/last.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
+
 
 
 
@@ -38,6 +44,14 @@ function Fifth() {
         setSelected(TeamData[index]);
     };
 
+    useEffect(() => {
+        AOS.init({
+           
+          easing: 'ease-in-out'
+        });
+      }, []);
+    
+
     return (
         <div>
         <div className='bg-red-600 py-20 mt-20'>
@@ -48,7 +62,7 @@ function Fifth() {
             </div>
         
             <div className='flex flex-col md:flex-row gap-20 justify-center p-10'>
-                <div className='w-full md:w-1/2 flex flex-wrap gap-[50px]'>
+                <div className='w-full  flex flex-wrap gap-[50px]'>
                     {TeamData.map((team, index) => (
                         <Team
                             key={index}
@@ -71,13 +85,12 @@ function Fifth() {
             
         </div>
 
-        <div className='bg-white mt-32 flex flex-col md:flex-row justify-center  items-center '>
-    <div className='text-center  flex flex-col ml-0 md:ml-auto justify-center items-center font-bold'>
+        <div className='relative overflow-hidden bg-white mt-32  flex flex-col md:flex-col lg:flex-row justify-center  items-center '>
+    <div className='text-center w-full flex flex-col justify-center items-center font-bold'>
       <h1 className='text-red-600 text-xl md:text-2xl  '>F1 Race</h1>
       <h1 className='text-Black text-4xl md:text-6xl  '>Schedule</h1>
       </div> 
-      <div className='ml-0 md:ml-auto pr-0 md:pr-8'><button className='bg-red-600 hover:bg-red-400 text-white hover:text-gray-600 mt-10 md:mt-4 -skew-x-12   font-bold px-10 p-4'>Full Schedule<i class="fa-solid fa-angle-right"></i></button>
-      </div>
+     
     </div>
         
         <div className='flex flex-col gap-5 md:flex-row justify-center mt-20 p-10 items-center'>
@@ -104,8 +117,8 @@ function Fifth() {
 </div>
       
       
-         <div className='bg-red-600 flex justify-between p-20 mt-52'>
-            <div className='flex flex-col w-2/3'>
+         <div className='bg-red-600 flex flex-col md:flex-row justify-between p-20 mt-52'>
+            <div className='flex flex-col w-full md:w-2/3'>
                 <h1 className='text-white text-2xl'>Join Our Mailing List And</h1>
                 <h1 className='text-white font-bold text-4xl'>Get Closer To The Action With  F1 TV</h1>
             </div>
@@ -115,16 +128,16 @@ function Fifth() {
 
          <div className='flex flex-col gap-5 md:flex-row justify-center mt-10 p-10 items-center'>
     <div className='w-full md:w-1/2  relative'>
-        <img src={last} className='w-full h-[450px] ' alt=''/>
-        <h1 className='absolute w-2/3 text-center left-1/2 top-[40%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white '>F1 AUTHENTICS - F1 AND  TEAM MEMORABILIA</h1>
+        <img src={last} className='w-full h-[300px] md:h-[450px] ' alt=''/>
+        <h1 className='absolute w-2/3 text-center left-1/2 top-[40%] transform -translate-x-1/2 -translate-y-1/2 text-xl md:text-4xl font-bold text-white '>F1 AUTHENTICS - F1 AND  TEAM MEMORABILIA</h1>
 
-        <button className='absolute left-1/2 top-[75%] transform -translate-x-1/2 -translate-y-1/2 bg-red-600 hover:bg-white  text-white hover:text-red-600 mt-10 md:mt-4 -skew-x-12   font-bold px-10 p-4'>Shop Now<i class="fa-solid fa-angle-right"></i></button>
+        <button className='absolute left-1/2 top-[75%] transform -translate-x-1/2 -translate-y-1/2 bg-red-600 hover:bg-white  text-white hover:text-red-600 mt-10 md:mt-4 -skew-x-12   font-bold md:px-10 px-3  md:p-4'>Shop Now<i class="fa-solid fa-angle-right"></i></button>
     </div>
     <div className='w-full md:w-1/2  relative'>
-        <img src={helmet} className='w-full h-[450px] ' alt=''/>
-        <h1 className='absolute w-2/3 text-center left-1/2 top-[40%] transform -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl font-bold text-white '>F1 STORE OFFICIAL  F1 AND  TEAM MERCHANDICE  </h1>
+        <img src={helmet} className='w-full h-[300px] md:h-[450px] ' alt=''/>
+        <h1 className='absolute w-2/3 text-center left-1/2 top-[40%] transform -translate-x-1/2 -translate-y-1/2 text-xl md:text-4xl font-bold text-white '>F1 STORE OFFICIAL  F1 AND  TEAM MERCHANDICE  </h1>
        
-        <button className='absolute left-1/2 top-[75%] transform -translate-x-1/2 -translate-y-1/2 bg-red-600 hover:bg-white  text-white hover:text-red-600 mt-10 md:mt-4 -skew-x-12   font-bold px-10 p-4'>Shop Now<i class="fa-solid fa-angle-right"></i></button>
+        <button className='absolute left-1/2 top-[75%] transform -translate-x-1/2 -translate-y-1/2 bg-red-600 hover:bg-white  text-white hover:text-red-600 mt-10 md:mt-4 -skew-x-12   font-bold md:px-10 px-3  md:p-4'>Shop Now<i class="fa-solid fa-angle-right"></i></button>
     </div>
     </div>
         </div>

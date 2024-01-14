@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useEffect} from 'react'
 import news1 from '../images/news1.jpg'
 import news2 from '../images/news2.jpg'
 import news3 from '../images/news3.jpg'
@@ -6,7 +6,19 @@ import news4 from '../images/news4.jpg'
 import news5 from '../images/news5.jpg'
 import news6 from '../images/news6.jpg'
 import wallpaper from '../images/wallaper.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 function Fourth() {
+
+
+  useEffect(() => {
+    AOS.init({
+       
+      easing: 'ease-in-out'
+    });
+  }, []);
 
   const news = [
     {
@@ -41,22 +53,21 @@ function Fourth() {
 
   return (
     <div>
-      <div className='bg-white mt-32 flex flex-col md:flex-row justify-center  items-center '>
-    <div className='text-center  flex flex-col ml-0 md:ml-auto justify-center items-center font-bold'>
+          <div className=' overflow-hidden bg-white mt-32  flex flex-col md:flex-col lg:flex-row justify-center  items-center '>
+    <div className='text-center w-full flex flex-col justify-center items-center font-bold'>
       <h1 className='text-red-600 text-xl md:text-2xl  '>Featured</h1>
       <h1 className='text-Black text-4xl md:text-6xl  '>Topics</h1>
       </div> 
-      <div className='ml-0 md:ml-auto pr-0 md:pr-8'><button className='bg-red-600 hover:bg-red-400 text-white hover:text-gray-600 mt-10 md:mt-4 -skew-x-12   font-bold px-10 p-4'>Veiw All <i class="fa-solid fa-angle-right"></i></button>
-      </div>
+      
     </div>
 
-    <div className='flex mt-32 flex-col flex-wrap gap-y-16 md:gap-y-20 gap-5 md:gap-10 md:flex-row w-full p-10'>
+    <div className='flex mt-32 flex-col gap-5 md:flex-row w-full p-10'>
     
     
       {
         news.map((item)=>{
-          return(<div className='w-full md:w-[450px] text-center'>
-          <img src={item.image} className='w-full h-[200px] md:h-[300px] rounded-md' alt='' />
+          return(<div className='w-full md:w-1/2 text-center'>
+          <img src={item.image} className='w-full h-[400px] rounded-md' alt='' />
            <h1 className='text-red-600 text-2xl font-semibold  mt-4 md:mt-8'>news</h1>
            <h1 className='text-black text-3xl font-semibold  mt-4'>{item.description}</h1>
              </div>)
@@ -69,21 +80,19 @@ function Fourth() {
       <img src={wallpaper} className='w-full h-[200px] md:h-[600px]' alt=''></img>
     </div>
     
-    <div className='bg-white mt-32 flex flex-col md:flex-row justify-center  items-center '>
-    <div className='text-center  flex flex-col ml-0 md:ml-auto justify-center items-center font-bold'>
+    <div className=' overflow-hidden bg-white mt-32  flex flex-col md:flex-col lg:flex-row justify-center  items-center '>
+    <div className='text-center w-full flex flex-col justify-center items-center font-bold'>
       <h1 className='text-red-600 text-xl md:text-2xl  '>Featured</h1>
       <h1 className='text-Black text-4xl md:text-6xl  '>News</h1>
       </div> 
-      <div className='ml-0 md:ml-auto pr-0 md:pr-8'><button className='bg-red-600 hover:bg-red-400 text-white hover:text-gray-600 mt-10 md:mt-4 -skew-x-12   font-bold px-10 p-4'>Veiw All <i class="fa-solid fa-angle-right"></i></button>
-      </div>
+      
     </div>
-
-    <div className='flex mt-32 flex-col flex-wrap gap-y-16 md:gap-y-20 gap-5 md:gap-10 md:flex-row w-full p-10'>
+    <div className='flex mt-32 flex-col  gap-5 md:flex-row w-full p-10'>
     
     
       {
         neww.map((item)=>{
-          return(<div className='w-full md:w-[450px] text-center'>
+          return(<div className='w-full lg:w-1/3 text-center'>
           <img src={item.image} className='w-full h-[200px] md:h-[300px] rounded-md' alt='' />
            <h1 className='text-red-600 text-2xl font-semibold  mt-4 md:mt-8'>news</h1>
            <h1 className='text-black text-3xl font-semibold  mt-4'>{item.description}</h1>
