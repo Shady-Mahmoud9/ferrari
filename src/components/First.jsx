@@ -22,7 +22,7 @@ function First() {
     <div  className='w-full overflow-x-hidden  overflow-y-hidden flex flex-col items-center  md:h-[600px]' style={{ background: `url(${bg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
       <h1 data-aos="zoom-in" data-aos-duration="2000" className='text-white text-4xl md:text-5xl lg:text-9xl text-center font-semibold pt-10 md:pt-20 '>Scudera </h1>
       <h1 data-aos="zoom-in" data-aos-duration="2000" className='text-white  text-center  font-semibold mt-0 lg:-mt-24 md:-mt-12 ' style={{ fontSize: 'clamp(70px, 15vw, 350px)' , letterSpacing:'15px' }}>Firrari</h1>
-      <div  className='w-full p-10 bg-none lg:bg-white flex items-center justify-center'><img data-aos="zoom-in" data-aos-duration="2000" src={ferrarimen} className= 'mt-0 md:-mt-16 lg:-mt-72  w-[750px] ' alt="" />
+      <div  className='w-full lg:p-5 p-10 bg-none lg:bg-white flex items-center justify-center'><img data-aos="zoom-in" data-aos-duration="2000" src={ferrarimen} className= 'mt-0 md:-mt-16 lg:-mt-64  w-[750px] ' alt="" />
       </div>
     </div>
     <div data-aos="zoom-in" data-aos-duration="2000" className='bg-white mt-10 flex flex-col text-center justify-center items-center p-10 md:p-3'>
