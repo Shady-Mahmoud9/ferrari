@@ -62,7 +62,7 @@ function Fifth() {
             </div>
         
             <div className='flex flex-col md:flex-row gap-20 justify-center p-10'>
-                <div className='w-full md:w-[70%] flex flex-wrap gap-[50px]'>
+                <div className='w-full md:w-[70%] flex flex-wrap gap-[50px] cursor-pointer'>
                     {TeamData.map((team, index) => (
                         <Team
                             key={index}
@@ -74,7 +74,7 @@ function Fifth() {
                 </div>
                 {selected && (
                 <div className='flex flex-col w-full md:w-1/2 items-start'>
-                    <img src={selected.img} className='w-full' alt={selected.description} />
+                    <img src={selected.img} className=' w-full' alt={selected.description} />
                     <h1 className='text-white text-4xl font-bold '>{selected.title}</h1>
                     <p className='text-white text-xl font-base'> {selected.description}</p>
                 </div>
@@ -118,7 +118,7 @@ function Fifth() {
       
       
          <div className='bg-red-600 flex flex-col md:flex-row justify-between p-20 mt-52'>
-            <div className='flex flex-col w-full md:w-2/3'>
+            <div className='flex cursor-default flex-col w-full md:w-2/3'>
                 <h1 className='text-white text-2xl'>Join Our Mailing List And</h1>
                 <h1 className='text-white font-bold text-4xl'>Get Closer To The Action With  F1 TV</h1>
             </div>

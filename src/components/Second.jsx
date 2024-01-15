@@ -38,17 +38,20 @@ function Second() {
   }, {
     "image" : shokman,
     "title" : "Podcasts"
-  }, {
-    "image" : technical,
-    "title" : "Technical"
-  }, {
-    "image" : ferrari ,
-    "title" : "Driver Market"
-
-  }, {
-    "image" : blue,
-    "title" : "2022 Cars"
-  }]
+  }
+  ]
+  const topics2=[
+     {
+      "image" : technical,
+      "title" : "Technical"
+    }, {
+      "image" : ferrari ,
+      "title" : "Driver Market"
+  
+    }, {
+      "image" : blue,
+      "title" : "2022 Cars"}
+  ]
   
 
   return (
@@ -59,20 +62,31 @@ function Second() {
       </div> 
      
     </div>
-   <div className='flex mt-32 flex-col flex-wrap gap-y-16 md:gap-y-20 gap-5 md:gap-10 md:flex-row w-full p-10'>
+   <div className='flex flex-col   gap-5 md:flex-row w-full p-10'>
     
     
       {
         topics.map((item)=>{
-          return(<div data-aos='fade-up' data-aos-duration='1500' className='w-full md:w-[44%] lg:w-[450px] text-center'>
+          return(<div data-aos='fade-up' data-aos-duration='1500' className='w-full md:w-1/3 text-center'>
           <img src={item.image} className='hover:opacity-90 cursor-pointer w-full h-[300px] md:h-[450px] rounded-md' alt='' />
            <h1 className='text-black text-3xl font-semibold  mt-4 md:mt-8'>{item.title}</h1>
              </div>)
         })
       }
+   
     
    </div>
+   <div className='flex flex-col   gap-5 md:flex-row w-full p-10'>
    
+   {
+        topics2.map((item)=>{
+          return(<div data-aos='fade-up' data-aos-duration='1500' className='w-full md:w-1/2 lg:w-1/3 text-center'>
+          <img src={item.image} className='hover:opacity-90 cursor-pointer w-full h-[300px] md:h-[450px] rounded-md' alt='' />
+           <h1 className='text-black text-3xl font-semibold  mt-4 md:mt-8'>{item.title}</h1>
+             </div>)
+        })
+      }
+</div>
    <div className='mt-32 h-full md:h-[500px]' style={{background:`url(${bg})`,backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
 
       <div className='flex flex-col items-center justify-center text-center pt-28'>
