@@ -61,12 +61,12 @@ function Fourth() {
       
     </div>
 
-    <div className='flex mt-32 flex-col gap-5 md:flex-row w-full p-10'>
+    <div className='flex mt-32 flex-col gap-5 lg:flex-row w-full p-10'>
     
     
       {
         news.map((item)=>{
-          return(<div  data-aos='fade-up' data-aos-duration='1500' className='w-full md:w-1/2 text-center'>
+          return(<div  data-aos='fade-up' data-aos-duration='1500' className='w-full lg:w-1/2 text-center'>
           <img src={item.image} className='hover:opacity-90 cursor-pointer w-full h-[300px] md:h-[400px] rounded-md' alt='' />
            <h1 className='text-red-600 text-2xl font-semibold  mt-4 md:mt-8'>news</h1>
            <h1 className='text-black text-3xl font-semibold  mt-4'>{item.description}</h1>
@@ -87,7 +87,7 @@ function Fourth() {
       </div> 
       
     </div>
-    <div className='flex mt-32 flex-col  gap-5 md:flex-row w-full p-10'>
+    <div className='flex mt-32 flex-col  gap-5 lg:flex-row w-full p-10'>
     
     
       {

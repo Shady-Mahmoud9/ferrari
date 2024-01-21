@@ -19,21 +19,21 @@ function Third() {
   }, []);
 
   return (
-    <div className='h-full md:h-[800px] mt-[70px] md:mt-[530px] ' style={{background:`url(${bg})` ,backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
+    <div className='h-full md:h-[900px] mt-[70px] md:mt-[530px] ' style={{background:`url(${bg})` ,backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
 
       <div className='flex flex-col items-center justify-center text-center pt-28'>
         <h1 className='text-red-600 text-3xl  font-semibold'>Constrauctors</h1>
         <h1 className='text-white text-5xl  font-semibold mt-6'>2023 Standings</h1>
       </div>
 
-      <div className='flex flex-col md:flex-row justify-center  my-16 items-center gap-10 w-full p-10'>
+      <div className='flex flex-col md:flex-row justify-center  my-16 items-center gap-2 md:gap-10 w-full p-2 md:p-10'>
         
-        <div data-aos='zoom-in' data-aos-duration='1500' className='w-full  relative md:w-1/4 flex flex-col gap-2 items-center'>
+        <div data-aos='zoom-in' data-aos-duration='1500' className='w-full  relative md:w-1/3 lg:w-1/4 flex flex-col gap-2 items-center'>
         <button className='bg-red-600 text-white hover:text-red-600 rounded-full w-[60px] hover:bg-gray-200  absolute top-0 left-0 md:left-16   p-3 z-10'>
         <i class="fa-solid text-xl  fa-2"></i>
             </button>
-          <img src={oracle} className='md:w-[300px] w-[200px] hover:bg-gray-300 cursor-pointer h-[200px] md:h-[300px] bg-white rounded-full pt-5' alt='' />
-          <img src={oraclecar} className='-mt-32 w-[270px]' alt='' />
+          <img src={oracle} className='md:w-[300px] w-[200px] hover:bg-gray-300 cursor-pointer h-[200px]  lg:h-[300px] bg-white rounded-full pt-5' alt='' />
+          <img src={oraclecar} className='-mt-16 lg:-mt-32 w-[170px] lg:w-[270px]' alt='' />
 
           <div className='flex mt-10 flex-col justify-center items-center text-center'>
           <h1 className='text-white  text-4xl  font-semibold '>RedBul Racing</h1>
@@ -44,12 +44,12 @@ function Third() {
 
 
 
-        <div data-aos='zoom-in' data-aos-duration='1500' className='w-full md:w-1/4 relative flex flex-col gap-2 items-center'>
+        <div data-aos='zoom-in' data-aos-duration='1500' className='w-full md:w-1/3 lg:w-1/4 relative flex flex-col gap-2 items-center'>
         <button className='bg-red-600 text-white hover:text-red-600 rounded-full w-[60px] hover:bg-gray-300  absolute top-0 left-0 md:left-16   p-3 z-10'>
         <i class="fa-solid text-xl   fa-1"></i>
             </button>
-          <img src={marcides} className='md:w-[350px] w-[200px] cursor-pointer hover:bg-gray-200 h-[200px] md:h-[350px] bg-white rounded-full pt-5' alt='' />
-          <img src={amg} className='-mt-28 w-[270px]' alt='' />
+          <img src={marcides} className='md:w-[350px] w-[200px] cursor-pointer hover:bg-gray-200 h-[200px]  lg:h-[350px] bg-white rounded-full pt-5' alt='' />
+          <img src={amg} className='-mt-20 lg:-mt-32 w-[170px] lg:w-[270px]' alt='' />
           
           <div className='flex  flex-col justify-center items-center text-center'>
           
@@ -59,12 +59,12 @@ function Third() {
         </div>
        
        
-        <div data-aos='zoom-in' data-aos-duration='1500' className='w-full md:w-1/4 relative  flex flex-col gap-2 items-center'>
+        <div data-aos='zoom-in' data-aos-duration='1500' className='w-full md:w-1/3 lg:w-1/4 relative  flex flex-col gap-2 items-center'>
         <button className='bg-red-600 text-white hover:text-red-600 rounded-full w-[60px] hover:bg-gray-300  absolute top-0 left-0 md:left-16   p-3 z-10'>
         <i class="fa-solid text-xl  fa-3"></i>
             </button>
-          <img src={ferrari} className='md:w-[300px] w-[200px] hover:bg-gray-200 cursor-pointer h-[200px] md:h-[300px] bg-white rounded-full pt-5' alt='' />
-          <img src={scudera} className='-mt-24 w-[270px] ' alt='' />
+          <img src={ferrari} className='md:w-[300px] w-[200px] hover:bg-gray-200 cursor-pointer h-[200px]  lg:h-[300px] bg-white rounded-full pt-5' alt='' />
+          <img src={scudera} className='-mt-16 lg:-mt-32 w-[170px] lg:w-[270px]' alt='' />
           
           <div className='flex flex-col justify-center items-center text-center'>
         

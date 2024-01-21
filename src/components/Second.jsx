@@ -62,12 +62,12 @@ function Second() {
       </div> 
      
     </div>
-   <div className='flex flex-col   gap-5 md:flex-row w-full p-10'>
+   <div className='flex flex-col   gap-5 lg:flex-row w-full p-10'>
     
     
       {
         topics.map((item)=>{
-          return(<div data-aos='fade-up' data-aos-duration='1500' className='w-full md:w-1/3 text-center'>
+          return(<div data-aos='fade-up' data-aos-duration='1500' className='w-full lg:w-1/3 text-center'>
           <img src={item.image} className='hover:opacity-90 cursor-pointer w-full h-[300px] md:h-[450px] rounded-md' alt='' />
            <h1 className='text-black text-3xl font-semibold  mt-4 md:mt-8'>{item.title}</h1>
              </div>)
@@ -76,11 +76,11 @@ function Second() {
    
     
    </div>
-   <div className='flex flex-col   gap-5 md:flex-row w-full p-10'>
+   <div className='flex flex-col   gap-5 lg:flex-row w-full p-10'>
    
    {
         topics2.map((item)=>{
-          return(<div data-aos='fade-up' data-aos-duration='1500' className='w-full md:w-1/2 lg:w-1/3 text-center'>
+          return(<div data-aos='fade-up' data-aos-duration='1500' className='w-full  lg:w-1/3 text-center'>
           <img src={item.image} className='hover:opacity-90 cursor-pointer w-full h-[300px] md:h-[450px] rounded-md' alt='' />
            <h1 className='text-black text-3xl font-semibold  mt-4 md:mt-8'>{item.title}</h1>
              </div>)
@@ -94,9 +94,9 @@ function Second() {
         <h1 className='text-white text-5xl  font-semibold mt-6'>2023 Standings</h1>
       </div>
 
-      <div className='flex flex-col md:flex-row justify-center mt-16 items-center gap-10 w-full p-10'>
+      <div className='flex flex-col md:flex-row justify-center mt-16 items-center gap-2 md:gap-10 w-full p-2 md:p-10'>
         
-        <div data-aos='zoom-in' data-aos-duration='1500' className='w-full relative md:w-1/4 flex flex-col gap-5 items-center'>
+        <div data-aos='zoom-in' data-aos-duration='1500' className='w-full relative md:w-1/3 lg:w-1/4  flex flex-col gap-5 items-center'>
         <button className='bg-white rounded-full w-[60px] hover:bg-red-600 text-red-600 hover:text-white absolute top-0 left-0 md:left-16   p-3 z-10'>
         <i class="fa-solid text-xl fa-2"></i>
             </button>
@@ -110,11 +110,11 @@ function Second() {
 
 
 
-        <div data-aos='zoom-in' data-aos-duration='1500' className='w-full md:w-1/4 relative flex flex-col gap-5 items-center'>
+        <div data-aos='zoom-in' data-aos-duration='1500' className='w-full md:w-1/3 lg:w-1/4  relative flex flex-col gap-5 items-center'>
         <button className='bg-white rounded-full w-[60px] hover:bg-red-600 text-red-600 hover:text-white absolute top-0 left-0 md:left-16   p-3 z-10'>
         <i class="fa-solid text-xl  fa-1"></i>
             </button>
-          <img src={man2} className='hover:scale-110 duration-1000 cursor-pointer md:w-[300px] w-[300px] h-[300px] md:h-[300px] bg-red-600 rounded-full pt-5' alt='' />
+          <img src={man2} className='hover:scale-110 duration-1000 cursor-pointer lg:w-[300px] w-[250px] h-[250px] lg:h-[300px] bg-red-600 rounded-full pt-5' alt='' />
           <div className='flex flex-col justify-center items-center'>
           <img src={turkey} className='w-[40px]  h-[40px]' alt='' />
           <h1 className='text-white md:text-black text-2xl  font-semibold'>Lewis </h1>
@@ -123,7 +123,7 @@ function Second() {
         </div>
        
        
-        <div data-aos='zoom-in' data-aos-duration='1500' className='w-full md:w-1/4 relative  flex flex-col gap-5 items-center'>
+        <div data-aos='zoom-in' data-aos-duration='1500' className='w-full md:w-1/3 lg:w-1/4  relative  flex flex-col gap-5 items-center'>
         <button className='bg-white rounded-full w-[60px] hover:bg-red-600 text-red-600 hover:text-white absolute top-0 left-0 md:left-16   p-3 z-10'>
         <i class="fa-solid text-xl fa-3"></i>
             </button>
